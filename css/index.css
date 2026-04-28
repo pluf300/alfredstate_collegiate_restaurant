@@ -11,7 +11,7 @@ html {
 
 /* ===== BODY ===== */
 body {
-   font-family: 'Lato', Verdana, sans-serif;
+   font-family: Calibri, 'Gill Sans', Arial, sans-serif;
    background-color: #faf8f4;
    color: #2c2c2c;
 }
@@ -25,7 +25,7 @@ header {
 }
 
 header h1 {
-   font-family: 'Playfair Display', Georgia, serif;
+   font-family: 'Oswald', Arial, sans-serif;
    font-size: 2.4em;
    color: #c8a96e;
    letter-spacing: 5px;
@@ -92,7 +92,7 @@ nav ul li a:hover {
 }
 
 #hero h2 {
-   font-family: 'Playfair Display', Georgia, serif;
+   font-family: Calibri, 'Gill Sans', Arial, sans-serif;
    font-size: 4.5em;
    color: white;
    margin-bottom: 14px;
@@ -144,7 +144,7 @@ section {
 }
 
 .section-title {
-   font-family: 'Playfair Display', Georgia, serif;
+   font-family: Calibri, 'Gill Sans', Arial, sans-serif;
    font-size: 2.4em;
    color: #14213d;
    margin-bottom: 16px;
@@ -183,11 +183,12 @@ section {
    display: inline-block;
    background-color: #14213d;
    color: #c8a96e;
-   font-family: 'Playfair Display', Georgia, serif;
+   font-family: Calibri, 'Gill Sans', Arial, sans-serif;
    font-size: 0.95em;
    padding: 8px 22px;
    border-radius: 6px;
    margin-top: 6px;
+   text-decoration: none;
 }
 
 .history-text {
@@ -201,6 +202,7 @@ section {
 /* ===== LEARNING LAB SECTION ===== */
 #lab {
    background-color: #f2ede4;
+   border-top: 2px solid #c8a96e;
 }
 
 .lab-card {
@@ -225,7 +227,7 @@ section {
 }
 
 .lab-card-text h3 {
-   font-family: 'Playfair Display', Georgia, serif;
+   font-family: Calibri, 'Gill Sans', Arial, sans-serif;
    font-size: 1.2em;
    color: #14213d;
    font-weight: 700;
@@ -281,14 +283,14 @@ section {
 }
 
 .hours-time {
-   font-family: 'Playfair Display', Georgia, serif;
+   font-family: Calibri, 'Gill Sans', Arial, sans-serif;
    font-size: 0.95em;
    color: white;
    line-height: 1.5em;
 }
 
 .hours-closed-text {
-   font-family: 'Playfair Display', Georgia, serif;
+   font-family: Calibri, 'Gill Sans', Arial, sans-serif;
    font-size: 0.95em;
    color: rgba(255, 255, 255, 0.45);
    font-style: italic;
@@ -334,6 +336,79 @@ section {
    color: #14213d;
 }
 
+/* ===== FAQ SECTION ===== */
+#faq {
+   background-color: #faf8f4;
+}
+
+.faq-list {
+   display: flex;
+   flex-flow: column nowrap;
+   gap: 10px;
+   margin-top: 8px;
+}
+
+.faq-item {
+   border: 1px solid #e0d8cc;
+   border-radius: 6px;
+   background-color: white;
+   overflow: hidden;
+}
+
+.faq-item[open] {
+   border-color: #c8a96e;
+}
+
+.faq-question {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 18px 22px;
+   font-size: 1em;
+   font-weight: 700;
+   color: #14213d;
+   cursor: pointer;
+   list-style: none;
+   gap: 16px;
+}
+
+.faq-question::-webkit-details-marker {
+   display: none;
+}
+
+.faq-question::after {
+   content: '+';
+   font-size: 1.4em;
+   color: #c8a96e;
+   font-weight: 400;
+   flex-shrink: 0;
+   line-height: 1;
+}
+
+.faq-item[open] .faq-question::after {
+   content: '\2212';
+}
+
+.faq-question:hover {
+   background-color: #faf3e6;
+}
+
+.faq-answer {
+   padding: 0 22px 18px 22px;
+   font-size: 0.97em;
+   line-height: 1.8em;
+   color: #444444;
+}
+
+.faq-answer a {
+   color: #c8a96e;
+   text-decoration: none;
+}
+
+.faq-answer a:hover {
+   text-decoration: underline;
+}
+
 /* ===== FOOTER ===== */
 footer {
    background-color: #0d1626;
@@ -344,7 +419,7 @@ footer {
 }
 
 footer .footer-name {
-   font-family: 'Playfair Display', Georgia, serif;
+   font-family: Calibri, 'Gill Sans', Arial, sans-serif;
    font-size: 1.6em;
    color: #c8a96e;
    margin-bottom: 16px;
