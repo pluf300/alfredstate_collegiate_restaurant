@@ -60,6 +60,7 @@ nav ul li a {
    letter-spacing: 2px;
    text-transform: uppercase;
    border-bottom: 2px solid transparent;
+   transition: color 0.2s, border-color 0.2s;
 }
 
 nav ul li a:hover {
